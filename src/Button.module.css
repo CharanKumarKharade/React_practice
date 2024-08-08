@@ -1,0 +1,55 @@
+.error {
+  color: red;
+  background-color: green;
+  padding-left: 20px;
+  margin-left: 20px;
+  width: 500px;
+  text-align: center;
+}
+.warning {
+  color: blue;
+  font-style: italic;
+  padding: 20px;
+}
+.menu {
+  width: 100%;
+  position: fixed;
+  height: 50vh;
+  left: -100%;
+  text-align: left;
+  background-color: rgb(216, 216, 15);
+  transition: 0.5s;
+}
+.menu ul li {
+  list-style-type: none;
+  padding: 10px 0;
+}
+.activeMenu {
+  left: 0%;
+}
+.micon {
+  position: absolute;
+  right: 10px;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(216, 31, 31, 0.5);
+}
+.modaldiv {
+  width: 320px;
+  height: 320px;
+  position: fixed;
+  left: 50%;
+  top: -50%;
+  transition: 0.5s;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.en {
+  position: fixed;
+  transform: rotate(90deg);
+  right: -50px;
+  top: 100px;
+}
