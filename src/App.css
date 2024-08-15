@@ -44,3 +44,64 @@
   background-color: rgb(18, 123, 214);
   padding: 1rem;
 }
+.faq h2 {
+  color: rgb(218, 15, 15);
+}
+.faqitems {
+  border: 1px solid red;
+  margin-top: 20px;
+}
+.faqitems h2 {
+  margin: 0px;
+  padding: 10px;
+  background-color: #00b9ec;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
+.faqitems p {
+  text-align: left;
+  height: 0px;
+  transform: scaleY(0);
+  padding: 0px;
+  transition: 0.5s;
+  margin: 0px;
+}
+.activeAns {
+  height: auto !important;
+  transform: scaleY(1) !important;
+  padding: 10px !important;
+  margin: 0px;
+  color: #00b9ec;
+}
+.tabbing {
+  margin: auto;
+  width: 1170px;
+  text-align: center;
+}
+.tabbing h2 {
+  font-size: 24px;
+}
+.tabbing ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.tabbing ul li {
+  margin: 0px 10px;
+}
+.tabbing ul li button {
+  padding: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
+.activeColor {
+  background-color: red !important;
+}
+.tabbing p {
+  text-align: left;
+  font-size: 20px;
+}

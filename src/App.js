@@ -8,6 +8,9 @@ import Header from "./Header.jsx";
 import Navbar from "./Navbar.jsx";
 import btncss from "./Button.module.css";
 import { useState } from "react";
+// import { question } from "./Data/faq.jsx";
+import Faqs from "./Faqs.jsx";
+import Tabbing from "./Tabbing.jsx";
 function App() {
   const display = () => {
     setCount(1 + count);
@@ -44,8 +47,32 @@ function App() {
   let [count, setCount] = useState(100);
   let [pstatus, setPstatus] = useState(false);
   let [menuStatus, setmenuStatus] = useState(false);
+  // let [faqShow, faqShowStatus] = useState(question[0].id);
   return (
     <div className="App">
+      <Tabbing />
+      <Faqs />
+      {/* <div className="faq">
+        <h2>Frequently ASked questions</h2>
+        <div className="faq__container">
+          {question.map((faqItems, i) => {
+            return (
+              <div className="faqitems">
+                <h2
+                  onClick={() => {
+                    faqShowStatus(faqItems.id);
+                  }}
+                >
+                  {faqItems.question}
+                </h2>
+                <p className={faqShow === faqItems.id ? "activeAns" : ""}>
+                  {faqItems.answers}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div> */}
       <button className={btncss.en}>Enquire</button>
       <div className={btncss.modal}> </div>
       <div className={btncss.modalcss}>
