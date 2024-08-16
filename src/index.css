@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  font-family:  "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  padding: 0;
+  font-family: "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -9,4 +10,48 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.navbar {
+  margin: auto;
+  width: 1349px;
+  background-color: aqua;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+.navbar ul li {
+  font-weight: 900;
+  font-size: 20px;
+}
+.navbar ul li a {
+  color: rgb(211, 28, 28);
+  text-decoration: none;
+}
+.error,
+.foot,
+.head {
+  border: 2px solid red;
+  margin-top: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 0 0 20px;
+}
+.containerInfo {
+  text-align: center;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 255, 0.2);
+  flex-basis: 26%;
+}
+.containerInfo button {
+  padding: auto;
+  color: blue;
+  font-weight: bold;
 }

@@ -50,6 +50,7 @@ function App() {
   // let [faqShow, faqShowStatus] = useState(question[0].id);
   return (
     <div className="App">
+      <Navbar />
       <Tabbing />
       <Faqs />
       {/* <div className="faq">

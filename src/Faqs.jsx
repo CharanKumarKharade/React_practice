@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import "./index.css";
 import { question } from "./Data/faq.jsx";
+import Navbar from "./Navbar.jsx";
 function Faqs() {
   let [currentId, setCurrentId] = useState(0);
 
@@ -13,6 +15,7 @@ function Faqs() {
   });
   return (
     <div className="faq">
+      <Navbar />
       <h2>Frequently ASked questions</h2>
       <div className="faqitems">{items}</div>
     </div>

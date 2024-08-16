@@ -105,3 +105,16 @@
   text-align: left;
   font-size: 20px;
 }
+.navbar {
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0px;
+  margin: 10px;
+}

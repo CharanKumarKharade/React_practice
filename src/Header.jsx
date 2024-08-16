@@ -1,19 +1,24 @@
 // function Header({ headerInfo, cname, children })
-import { useState } from "react";
+
+import Navbar from "./Navbar";
+import "./index.css";
+// import { useState } from "react";
 function Header() {
-  const [name, setName] = useState("Charles");
-  const change = () => {
-    setName("Devaraj");
-    console.log("name changed");
-  };
+  // const [name, setName] = useState("Charles");
+  // const change = () => {
+  //   setName("Devaraj");
+  //   console.log("name changed");
+  // };
   return (
     <>
-      <h2>WElcome to Heading!!!!</h2>;
-      <div>
-        <h3 onClick={change}>hey,{name} from India</h3>
-        <p>I'm a ReactJS Developer</p>
-        <p>I'm from India</p>
-        <p>I have {0.1 + 0} years of experience</p>
+      <Navbar />
+      <div className="head">
+        <h1>Welcome to Our Website!</h1>
+        <p>
+          Your one-stop solution for all your needs. We offer a range of
+          services designed to help you achieve your goals. Explore our site to
+          learn more about what we can do for you.
+        </p>
       </div>
     </>
   );
